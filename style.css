@@ -1,0 +1,30 @@
+/* Custom styles to complement Tailwind */
+#cityInput::placeholder {
+  color: rgba(156, 163, 175, 0.7);
+}
+
+.dark #cityInput::placeholder {
+  color: rgba(209, 213, 219, 0.5);
+}
+
+/* Smooth transitions for theme changes */
+#weatherInfo, #cityInput, #error-container {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects for buttons */
+#searchBtn:hover, #theme-toggle:hover {
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  #app-body {
+    padding: 1rem;
+  }
+  
+  #theme-toggle {
+    top: 1rem;
+    right: 1rem;
+  }
+}
